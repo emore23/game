@@ -33,13 +33,13 @@ const Hero: React.FC = () => {
     } else if (event.key === 'ArrowDown') {
       const newPosition = {
         x: position.x,
-        y: position.y - 1,
+        y: position.y + 1,
       };
       setPosition(newPosition);
     } else if (event.key === 'ArrowUp') {
       const newPosition = {
         x: position.x,
-        y: position.y + 1,
+        y: position.y - 1,
       };
       setPosition(newPosition);
     }
